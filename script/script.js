@@ -43,7 +43,7 @@ function playRound (playerSelection,computerSelection){
             (playerSelection === "scissors"  && computerSelection === "rock"))
     {
         computerScore++
-        alert(`you loose this round, your score ${playerScore} to ${computerScore}`);
+        alert(`you loose this round, your score is ${playerScore} to ${computerScore}`);
     }
     else if((playerSelection !== "rock" && computerSelection !== "paper") ||
             (playerSelection !== "paper"  && computerSelection !== "scissors") ||
@@ -82,7 +82,7 @@ function gamePlay(){
     playerSelection = prompt("Round 5: Rock? Paper? Scissors?");
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerPlay();
-    //round 2
+    //round 5
     playRound(playerSelection,computerSelection);
 
 if(playerScore > computerScore){
